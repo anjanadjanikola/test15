@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 1 - Advanced JavaScript Programming</title>
+</head>
+    <body>
+    <script>
+        function Student(name, address, phone, course) {
+            this.name = name;
+            this.address = address;
+            this.phone = phone;
+            this.course = course;
+            this.getInfo = function () {
+        return "Name: " + this.name + "\n" +
+               "Address: " + this.address + "\n" +
+               "Phone: " + this.phone + "\n" +
+               "Course: " + this.course 
+            }
+        }
+        let student1 = new Student("Anja Skenderovic", "Blaska Rajica 10", "+381 64 333 333", "HTML");
+        let student2 = new Student("Nadja Skenderovic", "Blaska Rajica 15", "+381 64 222 222", "CSS");
+        let student3 = new Student("Nikola Skenderovic", "Blaska Rajica 25", "+381 64 111 111", "JavaScript");
+        let student1Info = student1.getInfo();
+        let student2Info = student2.getInfo();
+        let student3Info = student3.getInfo();
+        
+        console.log(student1Info);
+        console.log(student2Info);
+        console.log(student3Info);
+    </script>
+	</body>
+</html>
